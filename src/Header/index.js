@@ -1,11 +1,13 @@
 import React from "react";
 import { Title, Paragraph } from "./styled";
 
-const Header = () => (
+const Header = ({ date }) => (
   <>
-    <Title>Currency Converter</Title>
-    <Paragraph>Fast and secure currency exchange</Paragraph>
+    <Title>Przelicznik walut</Title>
+    <Paragraph>Dzisiaj jest {date}</Paragraph>
   </>
+  
 );
 
 export default Header;
+

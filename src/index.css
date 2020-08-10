@@ -3,26 +3,24 @@ html {
 }
 
 *,
-::before,
-::after {
+::after,
+::before {
   box-sizing: inherit;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url(https://iili.io/J4MfR4.jpg);
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  font-family: "Lato", sans-serif;
-  padding: 0 0 125px 90px;
+  background-image: url("./background-picture.jpg");
 }
 
-@media (max-width: 520px) {
-  body {
-    padding: 120px 10px 125px 10px;
-    background-position: 59% 40%;
+#root {
+  color: #222;
+  font-family: "Merienda", italic;
+}
+
+@media (max-width: 767px) {
+  #root {
+    padding: 20px 10px;
   }
 }

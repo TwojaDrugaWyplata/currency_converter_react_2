@@ -7,11 +7,9 @@ export const Label = styled.label`
 `;
 
 export const Select = styled.select`
-  border: none;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 5px;
-  margin: 5px;
-  width: 70%;
+border: 1px solid #0234d2;
+padding: 10px;
+border-radius: 5px;
 `;
 
 export const Input = styled.input`
