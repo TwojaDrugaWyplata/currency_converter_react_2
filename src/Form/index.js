@@ -20,6 +20,8 @@ const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, se
           options={ratesToOptions()}
         />
       </Label>
+      
+      <Label labelText="Kwota">
       <Input
             required
             type="number"
@@ -28,13 +30,6 @@ const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, se
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
           />
-      <Label labelText="Kwota">
-        <input
-          className="form__field"
-          type="number"
-          value={amount}
-          onChange={({ target }) => setAmount(target.value)}
-        />
       </Label>
       <Label labelText="Druga waluta">
         <Select
